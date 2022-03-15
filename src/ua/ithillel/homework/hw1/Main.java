@@ -1,4 +1,4 @@
-package ua.ithillel.homework1;
+package ua.ithillel.homework.hw1;
 
 import java.util.Arrays;
 import java.util.Random;

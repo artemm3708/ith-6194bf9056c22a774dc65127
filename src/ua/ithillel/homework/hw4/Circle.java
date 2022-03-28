@@ -2,7 +2,7 @@ package ua.ithillel.homework.hw4;
 
 public class Circle implements FigureArea {
 
-    private final double PI = 3.14;
+    private static final double PI = Math.PI;
     private int r;
 
     public Circle(int r) {
@@ -11,8 +11,7 @@ public class Circle implements FigureArea {
 
     @Override
     public double area() {
-        double area = (PI * this.r) * 2;
-        return area;
+        return (PI * this.r) * 2;
     }
 
     public int getR() {

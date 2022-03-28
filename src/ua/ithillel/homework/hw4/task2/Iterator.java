@@ -32,11 +32,11 @@ public class Iterator {
     public int next() {
         for (int i = currentPosition; i < this.arr.length; i++) {
             for (int j = 0; j < this.arr[i].length; j++) {
-                a = this.arr[i][j];
                 currentPosition++;
-                return a;
+                return arr[i][j];
             }
+
         }
-        return a;
+        return currentPosition;
     }
 }

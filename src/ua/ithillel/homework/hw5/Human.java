@@ -3,7 +3,7 @@ package ua.ithillel.homework.hw5;
 public class Human extends Member {
 
     public Human() {
-        super("Human", 100, 15);
+        super("Human", 4, 15);
     }
 
     @Override

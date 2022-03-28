@@ -1,10 +1,6 @@
 package ua.ithillel.homework.hw5;
 
-public class Barrier {
+public abstract class Barrier {
 
-    Member member;
-
-    public boolean overcome(Member member) {
-        return true;
-    }
+    public abstract boolean overcome(Member member);
 }

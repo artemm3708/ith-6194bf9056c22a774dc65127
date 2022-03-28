@@ -1,10 +1,10 @@
 package ua.ithillel.homework.hw5;
 
-public class Member {
+public abstract class Member {
 
-    int length;
-    int height;
-    String name;
+    private int length;
+    private int height;
+    private String name;
 
     public Member(String name, int length, int height) {
         this.name = name;
@@ -12,10 +12,19 @@ public class Member {
         this.height = height;
     }
 
-    public void run() {
+    public abstract void run();
+
+    public abstract void jump();
+
+    public int getLength() {
+        return length;
     }
 
-    public void jump() {
+    public int getHeight() {
+        return height;
     }
 
+    public String getName() {
+        return name;
+    }
 }

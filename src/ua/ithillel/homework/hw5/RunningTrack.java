@@ -6,12 +6,12 @@ public class RunningTrack extends Barrier {
 
     @Override
     public boolean overcome(Member member) {
-        if (member.length < this.length) {
-            System.out.println(member.name + " can't pass the running track");
+        member.run();
+        if (member.getLength() < this.length) {
+            System.out.println(member.getName() + " can't pass the running track");
             return false;
         } else {
-            member.run();
-            System.out.println(member.name + " passes the running track on distance " + this.length);
+            System.out.println(member.getName() + " passes the running track on distance " + this.length);
             return true;
         }
     }

@@ -7,10 +7,11 @@ public class Main {
         Member[] members = getMembers();
         Barrier[] barriers = getBarriers();
 
-        for (Barrier barrier : barriers) {
-            for (Member member : members) {
+        for (Member member : members) {
+            for (Barrier barrier : barriers) {
                 if (!barrier.overcome(member)) {
-                    System.out.println(member.name + " passed out");
+                    System.out.println(member.getName() + " passed out");
+                    break;
                 }
             }
         }

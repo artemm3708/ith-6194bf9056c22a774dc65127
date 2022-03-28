@@ -3,7 +3,7 @@ package ua.ithillel.homework.hw5;
 public class Robot extends Member {
 
     public Robot() {
-        super("Robot", 50, 20);
+        super("Robot", 2, 20);
     }
 
     @Override

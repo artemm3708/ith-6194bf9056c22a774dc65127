@@ -6,12 +6,12 @@ public class Wall extends Barrier {
 
     @Override
     public boolean overcome(Member member) {
-        if (member.height < this.height) {
-            System.out.println(member.name + " can't pass the wall");
+        member.jump();
+        if (member.getHeight() < this.height) {
+            System.out.println(member.getName() + " can't pass the wall");
             return false;
         } else {
-            member.jump();
-            System.out.println(member.name + " passes the wall on distance " + this.height);
+            System.out.println(member.getName() + " passes the wall on distance " + this.height);
             return true;
         }
     }

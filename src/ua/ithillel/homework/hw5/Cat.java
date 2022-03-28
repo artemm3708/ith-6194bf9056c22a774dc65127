@@ -3,7 +3,7 @@ package ua.ithillel.homework.hw5;
 public class Cat extends Member {
 
     public Cat() {
-        super("Cat", 10, 30);
+        super("Cat", 20, 8);
     }
 
     @Override

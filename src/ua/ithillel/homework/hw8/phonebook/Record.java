@@ -2,8 +2,8 @@ package ua.ithillel.homework.hw8.phonebook;
 
 public class Record {
 
-    long phoneNumber;
-    String name;
+    private long phoneNumber;
+    private String name;
 
     public Record(long phoneNumber, String name) {
         this.phoneNumber = phoneNumber;

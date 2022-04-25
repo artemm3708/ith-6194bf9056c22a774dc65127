@@ -5,16 +5,14 @@ import java.util.List;
 
 public class Box<T extends Fruit> {
 
-    private final T val;
     private List<T> amount;
 
     public Box(T val) {
-        this.val = val;
         this.amount = new ArrayList<T>();
     }
 
-    public void add() {
-        this.amount.add(this.val);
+    public void add(T fruit) {
+        this.amount.add(fruit);
     }
 
     public void add(List<T> fruits) {
@@ -30,11 +28,7 @@ public class Box<T extends Fruit> {
     }
 
     public boolean compare(Box box) {
-        if (this.val.getWeight() == box.getWeight()) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.getWeight() == box.getWeight();
     }
 
     public void merge(Box<T> box) {

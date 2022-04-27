@@ -19,16 +19,16 @@ public class Main {
 
         List<Apple> apples = new ArrayList(Arrays.asList(apple, apple2, apple3));
 
-        appleBox.add();
-        orangeBox.add(Arrays.asList(new Orange(), new Orange()));
+        appleBox.add(new Apple());
+        //orangeBox.add(Arrays.asList(new Orange(), new Orange()));
         appleBox.add(apples);
-        appleBox1.add(Arrays.asList(new Apple(), new Apple()));
+        //appleBox1.add(Arrays.asList(new Apple(), new Apple()));
 
         System.out.println(appleBox.getWeight());
-        System.out.println(orangeBox.getWeight());
+        //System.out.println(orangeBox.getWeight());
 
         System.out.println(appleBox.compare(orangeBox));
-        appleBox.merge(appleBox1);
-        System.out.println(appleBox.getWeight());
+        //appleBox.merge(appleBox1);
+        //System.out.println(appleBox.getWeight());
     }
 }

@@ -1,5 +1,6 @@
 package ua.ithillel.classwork.singlyLinkedList;
 
+import java.util.Iterator;
 import java.util.Objects;
 
 public class SinglyLinkedList<E> implements CustomList<E> {
@@ -65,6 +66,24 @@ public class SinglyLinkedList<E> implements CustomList<E> {
         prev.next = current.next;
         size--;
         return true;
+    }
+
+    public Iterator<E> iterator() {
+        Iterator<E> iterator = new Iterator<E>() {
+
+            private int currentIndex = 0;
+
+            @Override
+            public boolean hasNext() {
+                return currentIndex < size;
+            }
+
+            @Override
+            public E next() {
+                return get(currentIndex++);
+            }
+        };
+        return iterator;
     }
 
     private static class Node<E> {

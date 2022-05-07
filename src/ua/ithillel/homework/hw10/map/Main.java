@@ -11,11 +11,11 @@ public class Main {
         FileData fileData = new FileData("file.txt", 10, "user/desktop");
         FileData app2 = new FileData("app2", 40, "user/Artem");
 
-        fileNavigator.add(game);
-        fileNavigator.add(app);
-        fileNavigator.add(fileData);
+        fileNavigator.add(game.getPath(), game);
+        fileNavigator.add(app.getPath(), app);
+        fileNavigator.add(fileData.getPath(), fileData);
+        fileNavigator.add(app2.getPath(), app2);
         //System.out.println(fileNavigator.find("user/Artem"));
-        fileNavigator.add(app2);
         //System.out.println(fileNavigator.filterBySize(100));
 
         //fileNavigator.draw();

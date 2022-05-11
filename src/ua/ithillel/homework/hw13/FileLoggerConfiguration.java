@@ -1,6 +1,7 @@
 package ua.ithillel.homework.hw13;
 
 import java.io.File;
+import java.time.LocalTime;
 
 public class FileLoggerConfiguration {
 
@@ -9,11 +10,9 @@ public class FileLoggerConfiguration {
     private File file;
     private LoggingLevel currentLevel;
 
-    public FileLoggerConfiguration(File file, LoggingLevel currentLevel, int maxSize, String format) {
+    public FileLoggerConfiguration(File file, int maxSize) {
         this.file = file;
-        this.currentLevel = currentLevel;
         this.maxSize = maxSize;
-        this.format = format;
     }
 
     public long getMaxSize() {
@@ -30,5 +29,13 @@ public class FileLoggerConfiguration {
 
     public LoggingLevel getCurrentLevel() {
         return currentLevel;
+    }
+
+    public void setCurrentLevel(LoggingLevel currentLevel) {
+        this.currentLevel = currentLevel;
+    }
+
+    public String setFormat(String message) {
+        return this.format = String.format("[%s] [%s] Сообщение: %s", LocalTime.now(), this.currentLevel, message);
     }
 }

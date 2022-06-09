@@ -8,6 +8,6 @@ public class Main {
 
         FileLoggerConfiguration configuration = new FileLoggerConfiguration(new File("text.txt"), 200000);
         FileLogger fileLogger = new FileLogger(configuration);
-        fileLogger.info("test");
+        fileLogger.info(args[0]);
     }
 }

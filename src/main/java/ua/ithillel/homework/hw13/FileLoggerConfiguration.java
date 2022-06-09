@@ -36,6 +36,6 @@ public class FileLoggerConfiguration {
     }
 
     public String setFormat(String message) {
-        return this.format = String.format("[%s] [%s] Сообщение: %s", LocalTime.now(), this.currentLevel, message);
+        return this.format = String.format("[%s] [%s] Message: %s", LocalTime.now(), this.currentLevel, message);
     }
 }

@@ -3,7 +3,6 @@ package ua.ithillel.homework.hw2.task1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.Reader;
 import java.util.Objects;
 
 public class Employee {
